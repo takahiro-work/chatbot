@@ -25,6 +25,6 @@ app.get('/chat', function (req, res) {
         res.json(response);
     }
 });
-app.listen(port, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log('チャットサーバーを開始しました ポート番号:' + port);
 });
