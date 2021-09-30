@@ -14,7 +14,7 @@ app.get('/chat', function (req, res) {
     const msg = response.output;
     msg.push({
         type: 'text',
-        value: '「' + userInputText + '」ですね！'
+        value: '「' + userInputText + '」ですね！わはは'
     });
     if (callback) {
         const responseText = callback + '(' + JSON.stringify(response) + ')';
