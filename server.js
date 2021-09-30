@@ -26,7 +26,7 @@ app.get('/chat', function (req, res) {
     }
 });
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + 'index.html');
+    res.sendFile(__dirname + './index.html');
 }); 
 app.listen(process.env.PORT || port, () => {
     console.log('チャットサーバーを開始しました ポート番号:' + port);
